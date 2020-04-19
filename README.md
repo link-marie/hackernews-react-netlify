@@ -1,8 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 ## Available Scripts
 
-In the project directory, you can run:
+Hacker News Client with React and Apollo on Netlify trial
+
+git@github.com:link-marie/hackernews-react-netlify.git
+
 
 ### `yarn start`
 
