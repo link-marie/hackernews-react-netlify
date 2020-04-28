@@ -15,7 +15,17 @@ Serverの uri は以下のとおり
 */
 const httpLink = createHttpLink({
   //  uri: 'http://localhost:4000'
-  uri: 'https://morning-sands-20248.herokuapp.com/'
+  uri: 'https://morning-sands-20248.herokuapp.com/',
+  onError: ({ graphQLErrors, networkError }) => {
+    if (graphQLErrors) {
+      // graphQLErrors固有の処理
+      console.log(graphQLErrors.toString())
+    }
+    if (networkError) {
+      // networkError固有の処理
+      console.log(networkError.toString())
+    }
+  }
 })
 
 // ApolloClientの生成
